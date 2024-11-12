@@ -9,7 +9,7 @@ import type {
 class WeatherAPI {
   private createUrl(endpoint: string, params: Record<string, string | number>) {
     const searchParams = new URLSearchParams({
-      appid: API_CONFIG.API_KEY,
+      appid: '8ccb068a753f0e50e222dba1ccd7e95e',
       ...params,
     });
     return `${endpoint}?${searchParams.toString()}`;
